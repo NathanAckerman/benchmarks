@@ -1,0 +1,21 @@
+starting
+done
+30000300
+
+
+
+ Performance counter stats for 'taskset 0x40 ./ll_page':
+
+        4901530914      cycles                                                      
+         959570726      instructions              #    0.20  insn per cycle         
+          32244224      cache-misses                                                
+
+       7.013598792 seconds time elapsed
+
+
+real	0m7.104s
+user	0m5.647s
+sys	0m1.354s
+
+
+

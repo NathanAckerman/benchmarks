@@ -1,0 +1,21 @@
+starting
+done
+250000000
+
+
+
+ Performance counter stats for 'taskset 0x20 ./arr_block':
+
+        3945796852      cycles                                                      
+        6016900538      instructions              #    1.52  insn per cycle         
+           4097021      cache-misses                                                
+
+       4.934955750 seconds time elapsed
+
+
+real	0m5.018s
+user	0m4.856s
+sys	0m0.110s
+
+
+

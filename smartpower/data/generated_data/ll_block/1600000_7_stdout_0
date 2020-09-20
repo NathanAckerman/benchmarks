@@ -1,0 +1,21 @@
+starting
+done
+80000800
+
+
+
+ Performance counter stats for 'taskset 0x80 ./ll_block':
+
+        5717860305      cycles                                                      
+        1507210082      instructions              #    0.26  insn per cycle         
+          80415184      cache-misses                                                
+
+       3.616759584 seconds time elapsed
+
+
+real	0m3.673s
+user	0m3.542s
+sys	0m0.044s
+
+
+

@@ -1,0 +1,19 @@
+cpu pid: 1134
+
+
+
+ Performance counter stats for 'taskset 0x4 ./syscall':
+
+           2610194      cycles                                                      
+            477111      instructions              #    0.18  insn per cycle         
+              5952      cache-misses                                                
+
+       5.317315375 seconds time elapsed
+
+
+real	0m5.385s
+user	0m1.593s
+sys	0m3.701s
+
+
+

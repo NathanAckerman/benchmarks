@@ -1,0 +1,21 @@
+starting
+done
+30000000
+
+
+
+ Performance counter stats for 'taskset 0x40 ./arr_page':
+
+        1996569994      cycles                                                      
+         667108518      instructions              #    0.33  insn per cycle         
+             35115      cache-misses                                                
+
+       2.219991333 seconds time elapsed
+
+
+real	0m2.291s
+user	0m2.202s
+sys	0m0.063s
+
+
+

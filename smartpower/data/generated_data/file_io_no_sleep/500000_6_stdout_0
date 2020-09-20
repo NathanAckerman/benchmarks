@@ -1,0 +1,19 @@
+io pid: 10871
+
+
+
+ Performance counter stats for 'taskset 0x40 ./file_io_no_sleep':
+
+        1844758078      cycles                                                      
+         596376045      instructions              #    0.32  insn per cycle         
+           3761312      cache-misses                                                
+
+       3.816086959 seconds time elapsed
+
+
+real	0m3.932s
+user	0m0.765s
+sys	0m2.982s
+
+
+

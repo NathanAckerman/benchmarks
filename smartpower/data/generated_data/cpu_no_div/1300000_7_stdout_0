@@ -1,0 +1,19 @@
+cpu pid: 22115
+
+
+
+ Performance counter stats for 'taskset 0x80 ./cpu_no_div':
+
+        2628912405      cycles                                                      
+        3123851501      instructions              #    1.19  insn per cycle         
+             25607      cache-misses                                                
+
+       2.023484792 seconds time elapsed
+
+
+real	0m2.087s
+user	0m2.016s
+sys	0m0.041s
+
+
+

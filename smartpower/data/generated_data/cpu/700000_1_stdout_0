@@ -1,0 +1,19 @@
+cpu pid: 30552
+
+
+
+ Performance counter stats for 'taskset 0x2 ./cpu':
+
+           1957847      cycles                                                      
+            482143      instructions              #    0.25  insn per cycle         
+              5914      cache-misses                                                
+
+       3.808133209 seconds time elapsed
+
+
+real	0m3.872s
+user	0m3.800s
+sys	0m0.017s
+
+
+

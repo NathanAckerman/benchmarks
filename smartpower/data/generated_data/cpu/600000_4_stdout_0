@@ -1,0 +1,19 @@
+cpu pid: 32110
+
+
+
+ Performance counter stats for 'taskset 0x10 ./cpu':
+
+        2404236677      cycles                                                      
+        2246995505      instructions              #    0.93  insn per cycle         
+             70568      cache-misses                                                
+
+       4.049028167 seconds time elapsed
+
+
+real	0m4.161s
+user	0m4.010s
+sys	0m0.055s
+
+
+

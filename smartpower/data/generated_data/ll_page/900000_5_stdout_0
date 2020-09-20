@@ -1,0 +1,21 @@
+starting
+done
+30000300
+
+
+
+ Performance counter stats for 'taskset 0x20 ./ll_page':
+
+        5872938532      cycles                                                      
+         958473399      instructions              #    0.16  insn per cycle         
+          32150991      cache-misses                                                
+
+       6.629265084 seconds time elapsed
+
+
+real	0m6.706s
+user	0m5.374s
+sys	0m1.162s
+
+
+

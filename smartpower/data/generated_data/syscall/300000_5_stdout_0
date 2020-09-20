@@ -1,0 +1,19 @@
+cpu pid: 2954
+
+
+
+ Performance counter stats for 'taskset 0x20 ./syscall':
+
+        2483789492      cycles                                                      
+         752799850      instructions              #    0.30  insn per cycle         
+            142025      cache-misses                                                
+
+       8.428585584 seconds time elapsed
+
+
+real	0m8.607s
+user	0m2.780s
+sys	0m5.568s
+
+
+

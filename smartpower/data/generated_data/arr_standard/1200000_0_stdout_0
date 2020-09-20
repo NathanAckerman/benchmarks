@@ -1,0 +1,21 @@
+starting
+done
+100000000
+
+
+
+ Performance counter stats for 'taskset 0x1 ./arr_standard':
+
+           1988218      cycles                                                      
+            503995      instructions              #    0.25  insn per cycle         
+              5955      cache-misses                                                
+
+       3.240421667 seconds time elapsed
+
+
+real	0m3.294s
+user	0m3.196s
+sys	0m0.035s
+
+
+

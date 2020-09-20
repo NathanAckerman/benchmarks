@@ -1,0 +1,19 @@
+cpu pid: 4615
+
+
+
+ Performance counter stats for 'taskset 0x80 ./syscall':
+
+        2450353869      cycles                                                      
+         742975836      instructions              #    0.30  insn per cycle         
+             31631      cache-misses                                                
+
+       1.294050959 seconds time elapsed
+
+
+real	0m1.346s
+user	0m0.511s
+sys	0m0.810s
+
+
+

@@ -1,0 +1,19 @@
+io pid: 23272
+
+
+
+ Performance counter stats for 'taskset 0x2 ./file_io':
+
+           2747699      cycles                                                      
+            493986      instructions              #    0.18  insn per cycle         
+              5836      cache-misses                                                
+
+      10.012661001 seconds time elapsed
+
+
+real	0m10.068s
+user	0m0.006s
+sys	0m0.048s
+
+
+

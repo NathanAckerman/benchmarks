@@ -1,0 +1,21 @@
+starting
+done
+120001200
+
+
+
+ Performance counter stats for 'taskset 0x8 ./ll_standard':
+
+           1992225      cycles                                                      
+            504079      instructions              #    0.25  insn per cycle         
+              5861      cache-misses                                                
+
+       6.342194250 seconds time elapsed
+
+
+real	0m6.393s
+user	0m6.275s
+sys	0m0.035s
+
+
+
