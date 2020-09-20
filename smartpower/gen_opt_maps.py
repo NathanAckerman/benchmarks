@@ -1,6 +1,7 @@
 import os
 import statistics
 import csv
+import sys
 
 all_edp_mappings = []
 all_ed2p_mappings = []
@@ -111,14 +112,27 @@ def process_file(f, bmc):#only process power files and grab matching stdout file
         return
     pf = open(bmc+"/"+f, "r")
     power_readings = []
-    for line in pf.readlines()[1:-1]:
+    for line in pf.readlines()[12:-1]:
         split_lines = line.split(",")
+        #print(split_lines)
         try:
-            w = float(split_lines[0])*float(split_lines[1])
+            cleaned = split_lines[0][-5:]
+            #print(split_lines[0][-5:])
+            w = float(cleaned)*float(split_lines[1])
         except:
             continue
         power_readings.append(w)
-    avg_power = statistics.mean(power_readings)
+
+    avg_power = 0
+    try:
+        avg_power = statistics.mean(power_readings)
+    except:
+        print(power_readings)
+        print("id search4me111")
+        print(f)
+        print(bmc)
+        print("probably no power readings in this file because of issue with the smartpower device")
+        return
     stdout_file_name = get_stdout_file_name(f)
     stdout_file = open(bmc+"/"+stdout_file_name, "r")
     stdout = stdout_file.readlines()
