@@ -74,8 +74,8 @@ def generate_mappings(all_run_data):
     #rd is:
     #(0:bmc, 1:freq, 2:core, 3:run_num, 4:ipc, 5:instructions, 6:cycles, 7:cache_misses, 8:wall_time, 9:user_time, 10:sys_time, 11:avg_power, 12:edp, 13:ed2p) 
     #edp_mappings = [(r[1], r[2], get_core_cluster(r[2]), r[4], r[5], r[6], r[7], r[8], r[9], r[10], edp_map) for r in all_run_data]
-    edp_mappings = [(r[1], get_core_cluster(r[2]), r[4], cache_misses_per_cycle(r), cache_misses_per_wall(r), cache_misses_per_cpu(r), edp_map) for r in all_run_data]
-    ed2p_mappings = [(r[1], get_core_cluster(r[2]), r[4], cache_misses_per_cycle(r), cache_misses_per_wall(r), cache_misses_per_cpu(r), ed2p_map) for r in all_run_data]
+    edp_mappings = [(r[1], get_core_cluster(r[2]), r[5], r[6], r[7], edp_map) for r in all_run_data]
+    ed2p_mappings = [(r[1], get_core_cluster(r[2]), r[5], r[6], r[7], ed2p_map) for r in all_run_data]
     #ed2p_mappings = [(r[1], r[2], get_core_cluster(r[2]), r[4], r[5], r[6], r[7], r[8], r[9], r[10], ed2p_map) for r in all_run_data]
 
     return edp_mappings, ed2p_mappings

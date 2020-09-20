@@ -9,7 +9,8 @@ from IPython.display import Image
 import pydotplus
 
 #col_names = ['freq', 'core_num', 'cluster', 'ipc', 'instructions', 'cycles', 'cache_misses', 'wall', 'user', 'sys', 'mapping_label']
-col_names = ['freq', 'cluster', 'ipc', 'cache_per_cycle', 'cache_per_wall', 'cache_per_cpu', 'mapping_label']
+#col_names = ['freq', 'cluster', 'ipc', 'cache_per_cycle', 'cache_per_wall', 'cache_per_cpu', 'mapping_label']
+col_names = ['freq', 'cluster', 'instr', 'cycles', 'cache_misses', 'mapping_label']
 
 mappings = pd.read_csv("edp_mappings.csv", header=None, names=col_names)
 

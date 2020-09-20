@@ -1,4 +1,5 @@
 import pandas as pd
+import math
 from sklearn.tree import DecisionTreeClassifier # Import Decision Tree Classifier
 from sklearn.model_selection import train_test_split # Import train_test_split function
 from sklearn import metrics #Import scikit-learn metrics module for accuracy calculation
@@ -11,7 +12,7 @@ import pydotplus
 import numpy as np
 
 #col_names = ['freq', 'core_num', 'cluster', 'ipc', 'instructions', 'cycles', 'cache_misses', 'wall', 'user', 'sys', 'mapping_label']
-col_names = ['freq', 'cluster', 'ipc', 'cache_per_cycle', 'cache_per_wall', 'cache_per_cpu', 'mapping_label']
+col_names = ['freq', 'cluster', 'instr', 'cycles', 'cache_misses', 'mapping_label']
 
 mappings = pd.read_csv("edp_mappings.csv", header=None, names=col_names)
 
@@ -83,7 +84,7 @@ for i in range(n_nodes):
 
         feat_name = str(feature_cols[feature[i]])
         print("NODE_"+str(i)+":")
-        print("%s%s%s%s%s" % ("if (", feat_name, " <= ", threshold[i], ") {"))
+        print("%s%s%s%s%s" % ("if (", feat_name, " <= ", math.floor(threshold[i]), ") {"))
         print("\tgoto NODE_"+str(children_left[i])+";")
         print("} else {")
         print("\t goto NODE_"+str(children_right[i])+";")
